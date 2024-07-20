@@ -32,7 +32,7 @@ const Hero = () => {
     <HeroSection>
       <div>
         <h1>Code By J</h1>
-        <p>Web Developer & Designer</p>
+        <p>Web Developer & AI Engineer</p>
       </div>
     </HeroSection>
   );

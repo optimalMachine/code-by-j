@@ -82,20 +82,22 @@ const About = () => {
         <Content>
           <TextContent>
             <Paragraph>
-              안녕하세요, 저는 웹 개발자이자 디자이너인 J입니다. 사용자 중심의 디자인과 
-              효율적인 코드 작성에 열정을 가지고 있습니다. 3년간의 프리랜서 경험을 통해 
-              다양한 프로젝트를 수행했으며, 항상 새로운 기술을 배우고 적용하는 것을 즐깁니다.
+            Hello, I'm Jay (Jiuk), a versatile professional with a passion for web development and AI Engineer. My journey has led me through various fields, allowing me to accumulate a diverse set of skills and perspectives. From web design to sales, and now to coding, each experience has shaped my unique approach to problem-solving and creativity.
             </Paragraph>
             <Paragraph>
-              제 목표는 사용자 경험을 개선하고 비즈니스 가치를 창출하는 웹 솔루션을 제공하는 것입니다. 
-              팀 협업을 중요하게 생각하며, 열린 마인드로 소통하고 문제를 해결하는 것을 좋아합니다.
+              My goal is to deliver web solutions that enhance user experience and create business value. I value team collaboration and enjoy communicating with an open mind to solve problems effectively.
+            </Paragraph>
+            <Paragraph>
+              When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or experimenting with creative coding concepts.
             </Paragraph>
             <SkillsList>
               <SkillItem>React</SkillItem>
               <SkillItem>JavaScript</SkillItem>
               <SkillItem>HTML/CSS</SkillItem>
               <SkillItem>Node.js</SkillItem>
-              <SkillItem>UI/UX Design</SkillItem>
+              <SkillItem>OpenAI</SkillItem>
+              <SkillItem>Python</SkillItem>
+              <SkillItem>Flask</SkillItem>
             </SkillsList>
           </TextContent>
           <ImageContainer>
