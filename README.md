@@ -26,7 +26,7 @@ _Discover more projects on the [website](https://www.codebyj.com)!_
 
 ## 📈 GitHub Stats
 
-![optimalMachine](https://github.com/optimalMachine)
+! 🎩 [optimalMachine](https://github.com/optimalMachine)
 
 ## 📞 Get in Touch
 
