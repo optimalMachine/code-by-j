@@ -62,10 +62,11 @@ const SkillItem = styled.li`
 
 const ImageContainer = styled.div`
   flex: 1;
-  max-width: 400px;
+  max-width: 300px; 
+  margin: 0 auto;
 
   @media (max-width: 768px) {
-    max-width: 100%;
+    max-width: 250px; 
   }
 `;
 
@@ -101,7 +102,7 @@ const About = () => {
             </SkillsList>
           </TextContent>
           <ImageContainer>
-            <ProfileImage src="/path-to-your-image.jpg" alt="Profile" />
+            <ProfileImage src="/images/Jprofile.jpg" alt="Jay" />
           </ImageContainer>
         </Content>
       </Container>

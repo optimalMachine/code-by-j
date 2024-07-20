@@ -1,13 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const HeroSection = styled.section`
   height: 100vh;
   display: flex;
   align-items: center;
   padding-left: 10%;
-  background-color: #f8f9fa;
+  background-color: #f5f5f5; // 밝은 회색 배경
 `;
 
 const HeroContent = styled.div`
@@ -15,25 +14,25 @@ const HeroContent = styled.div`
 `;
 
 const HeroTitle = styled.h1`
-  font-size: 60rem; 
-  margin-bottom: 1.5rem; 
-  color: #333;
-  font-weight: 700; 
+  font-size: 6rem;
+  margin-bottom: 1.5rem;
+  color: #333; // 어두운 회색 텍스트 색상
+  font-weight: 700;
 `;
 
 const HeroSubtitle = styled.p`
-  font-size: 2.8rem; 
-  color: #555; 
-  font-weight: 300; 
+  font-size: 2.8rem;
+  color: #666; // 중간 톤의 회색 텍스트 색상
+  font-weight: 300;
 `;
 
 const Hero = () => {
   return (
     <HeroSection>
-      <div>
-        <h1>Code By J</h1>
-        <p>Web Developer & AI Engineer</p>
-      </div>
+      <HeroContent>
+        <HeroTitle>Code By J</HeroTitle>
+        <HeroSubtitle>Web Developer & Designer</HeroSubtitle>
+      </HeroContent>
     </HeroSection>
   );
 };
