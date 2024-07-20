@@ -1,6 +1,5 @@
 # Code By J 🚀
 
-![Code By J Banner](https://your-image-url-here.com/banner.png)
 
 ## Welcome! 👋
 
