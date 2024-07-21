@@ -6,7 +6,7 @@ const HeroSection = styled.section`
   display: flex;
   align-items: center;
   padding-left: 10%;
-  background-color: #f5f5f5; // 밝은 회색 배경
+  background-color: #f5f5f5; 
 `;
 
 const HeroContent = styled.div`
@@ -31,7 +31,7 @@ const Hero = () => {
     <HeroSection>
       <HeroContent>
         <HeroTitle>Code By J</HeroTitle>
-        <HeroSubtitle>Web Developer & Designer</HeroSubtitle>
+        <HeroSubtitle>Web Developer & AI Engineer</HeroSubtitle>
       </HeroContent>
     </HeroSection>
   );

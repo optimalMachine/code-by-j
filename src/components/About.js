@@ -62,11 +62,11 @@ const SkillItem = styled.li`
 
 const ImageContainer = styled.div`
   flex: 1;
-  max-width: 300px; 
+  max-width: 200px; 
   margin: 0 auto;
 
   @media (max-width: 768px) {
-    max-width: 250px; 
+    max-width: 150px; 
   }
 `;
 
