@@ -62,8 +62,21 @@ const Projects = () => {
         <ProjectCard>
           <ProjectTitle>Personal Portfolio Website</ProjectTitle>
           <ProjectDescription>
-                A responsive personal portfolio website built using React and styled-components. 
-            This project showcases my skills in front-end development and modern web design principles.
+          <p>A modern, responsive personal portfolio website designed to effectively showcase my skills and projects. This project demonstrates my proficiency in front-end development and understanding of contemporary web design principles.</p>
+
+          <p>Key Technology Stack</p>
+          <ul>
+              <li><strong>React:</strong> For building a dynamic and interactive user interface</li>
+              <li><strong>styled-components:</strong> Implementing a consistent design system with component-based styling</li>
+              <li><strong>AWS (Amazon Web Services):</strong> Creating a reliable and scalable web hosting and deployment infrastructure</li>
+          </ul>
+          <p>Core Features</p>
+          <ol>
+              <li><strong>Responsive Design:</strong> Optimized user experience across various devices including mobile, tablet, and desktop</li>
+              <li><strong>Dynamic Project Gallery:</strong> An interactive project showcase section utilizing React's capabilities</li>
+              <li><strong>Accessibility Considerations:</strong> Designed in compliance with web accessibility guidelines to ensure usability for all users</li>
+              <li><strong>Performance Optimization:</strong> Implementing fast loading speeds through image optimization, code splitting, and other techniques</li>
+          </ol>
 
           </ProjectDescription>
           <ProjectLink href="https://github.com/optimalMachine/code-by-j" target="_blank" rel="noopener noreferrer">
