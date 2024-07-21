@@ -1,16 +1,20 @@
-import React from 'react';
-import Header from './components/Header'
+import React, { useContext } from 'react';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import { ThemeProvider as CustomThemeProvider, ThemeContext } from './ThemeContext';
+import { lightTheme, darkTheme } from './styles/theme';
+import GlobalStyle from './styles/GlobalStyle';
+
+import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from './styles/GlobalStyle';
-import theme from './styles/theme';
 
-function App() {
+function AppContent() {
+  const { isDarkMode } = useContext(ThemeContext);
+
   return (
-    <ThemeProvider theme={theme}>
+    <StyledThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <div className="App">
         <Header />
@@ -20,9 +24,16 @@ function App() {
           <Projects />
           <Contact />
         </main>
-
       </div>
-    </ThemeProvider>
+    </StyledThemeProvider>
+  );
+}
+
+function App() {
+  return (
+    <CustomThemeProvider>
+      <AppContent />
+    </CustomThemeProvider>
   );
 }
 

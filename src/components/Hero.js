@@ -6,7 +6,8 @@ const HeroSection = styled.section`
   display: flex;
   align-items: center;
   padding-left: 10%;
-  background-color: #f5f5f5; 
+  background-color: ${({ theme }) => theme.heroBackground};
+  transition: all 0.3s ease;
 `;
 
 const HeroContent = styled.div`
@@ -16,14 +17,16 @@ const HeroContent = styled.div`
 const HeroTitle = styled.h1`
   font-size: 6rem;
   margin-bottom: 1.5rem;
-  color: #333; // 어두운 회색 텍스트 색상
+  color: ${({ theme }) => theme.heroTitleColor};
   font-weight: 700;
+  transition: color 0.3s ease;
 `;
 
 const HeroSubtitle = styled.p`
   font-size: 2.8rem;
-  color: #666; // 중간 톤의 회색 텍스트 색상
+  color: ${({ theme }) => theme.heroSubtitleColor};
   font-weight: 300;
+  transition: color 0.3s ease;
 `;
 
 const Hero = () => {

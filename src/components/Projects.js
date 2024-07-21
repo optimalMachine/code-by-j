@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const ProjectsSection = styled.section`
   padding: 80px 0;
-  background-color: #f5f5f5; 
+  background-color: ${({ theme }) => theme.projectsBackground};
+  transition: background-color 0.3s ease;
 `;
 
 const Container = styled.div`
@@ -16,41 +17,57 @@ const Title = styled.h2`
   font-size: 3rem;
   margin-bottom: 40px;
   text-align: center;
-  color: #333;
+  color: ${({ theme }) => theme.titleColor};
+  transition: color 0.3s ease;
 `;
 
 const ProjectCard = styled.div`
-  background-color: #ffffff;
+  background-color: ${({ theme }) => theme.cardBackground};
   border-radius: 8px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px ${({ theme }) => theme.shadowColor};
+  transition: all 0.3s ease;
 `;
 
 const ProjectTitle = styled.h3`
   font-size: 2.4rem;
   margin-bottom: 15px;
-  color: #333;
+  color: ${({ theme }) => theme.titleColor};
+  transition: color 0.3s ease;
 `;
 
-const ProjectDescription = styled.p`
+const ProjectDescription = styled.div`
   font-size: 1.6rem;
-  color: #666;
+  color: ${({ theme }) => theme.textColor};
   margin-bottom: 20px;
+  transition: color 0.3s ease;
+
+  p, ul, ol {
+    margin-bottom: 15px;
+  }
+
+  ul, ol {
+    padding-left: 20px;
+  }
+
+  strong {
+    color: ${({ theme }) => theme.text};
+  }
 `;
 
 const ProjectLink = styled.a`
   display: inline-block;
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: ${({ theme }) => theme.buttonBackground};
+  color: ${({ theme }) => theme.buttonText};
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.6rem;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: ${({ theme }) => theme.buttonHoverBackground};
   }
 `;
 
@@ -64,18 +81,17 @@ const Projects = () => {
           <ProjectDescription>
           <p>A modern, responsive personal portfolio website designed to effectively showcase my skills and projects. This project demonstrates my proficiency in front-end development and understanding of contemporary web design principles.</p>
 
-          <p>Key Technology Stack</p>
+          <h3>Key Technology Stack</h3>
           <ul>
-              <li><strong>React:</strong> For building a dynamic and interactive user interface</li>
-              <li><strong>styled-components:</strong> Implementing a consistent design system with component-based styling</li>
-              <li><strong>AWS (Amazon Web Services):</strong> Creating a reliable and scalable web hosting and deployment infrastructure</li>
+              <li><strong>React:</strong> For building a dynamic and interactive user interface.</li>
+              <li><strong>Styled-components:</strong> Implementing a consistent design system with component-based styling.</li>
+              <li><strong>AWS (Amazon Web Services):</strong> Creating a reliable and scalable web hosting and deployment infrastructure.</li>
           </ul>
-          <p>Core Features</p>
+          <h3>Core Features</h3>
           <ol>
-              <li><strong>Responsive Design:</strong> Optimized user experience across various devices including mobile, tablet, and desktop</li>
-              <li><strong>Dynamic Project Gallery:</strong> An interactive project showcase section utilizing React's capabilities</li>
-              <li><strong>Accessibility Considerations:</strong> Designed in compliance with web accessibility guidelines to ensure usability for all users</li>
-              <li><strong>Performance Optimization:</strong> Implementing fast loading speeds through image optimization, code splitting, and other techniques</li>
+              <li><strong>Responsive Design:</strong> Optimized user experience across various devices including mobile, tablet, and desktop.</li>
+              <li><strong>Dark Mode:</strong> Implemented a toggleable dark/light theme for improved readability and reduced eye strain in different lighting conditions.</li>
+
           </ol>
 
           </ProjectDescription>

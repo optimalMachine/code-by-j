@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const AboutSection = styled.section`
   padding: 80px 0;
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.backgroundSecondary};
+  color: ${({ theme }) => theme.text};
+  transition: all 0.3s ease;
 `;
 
 const Container = styled.div`
@@ -16,6 +18,7 @@ const Title = styled.h2`
   font-size: 3rem;
   margin-bottom: 30px;
   text-align: center;
+  color: ${({ theme }) => theme.titleColor};
 `;
 
 const Content = styled.div`
@@ -42,6 +45,7 @@ const Paragraph = styled.p`
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 20px;
+  color: ${({ theme }) => theme.textSecondary};
 `;
 
 const SkillsList = styled.ul`
@@ -53,11 +57,12 @@ const SkillsList = styled.ul`
 
 const SkillItem = styled.li`
   font-size: 1.4rem;
-  background-color: #007bff;
-  color: white;
+  background-color: ${({ theme }) => theme.skillBackground};
+  color: ${({ theme }) => theme.skillText};
   padding: 5px 10px;
   margin: 5px;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 `;
 
 const ImageContainer = styled.div`
@@ -73,6 +78,7 @@ const ImageContainer = styled.div`
 const ProfileImage = styled.img`
   width: 100%;
   border-radius: 10px;
+  box-shadow: 0 4px 8px ${({ theme }) => theme.shadowColor};
 `;
 
 const About = () => {
@@ -83,7 +89,7 @@ const About = () => {
         <Content>
           <TextContent>
             <Paragraph>
-            Hello, I'm Jay (Jiuk), a versatile professional with a passion for web development and AI Engineer. My journey has led me through various fields, allowing me to accumulate a diverse set of skills and perspectives. From web design to sales, and now to coding, each experience has shaped my unique approach to problem-solving and creativity.
+              Hello, I'm Jay (Jiuk), a versatile professional with a passion for web development and AI Engineering. My journey has led me through various fields, allowing me to accumulate a diverse set of skills and perspectives. From web design to sales, and now to coding, each experience has shaped my unique approach to problem-solving and creativity.
             </Paragraph>
             <Paragraph>
               My goal is to deliver web solutions that enhance user experience and create business value. I value team collaboration and enjoy communicating with an open mind to solve problems effectively.

@@ -3,19 +3,8 @@ import styled from 'styled-components';
 
 const ContactSection = styled.section`
   padding: 80px 0;
-  background-color: #f9f9f9;
-`;
-
-
-const EmailLink = styled.a`
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
+  background-color: ${({ theme }) => theme.contactBackground};
+  transition: background-color 0.3s ease;
 `;
 
 const Container = styled.div`
@@ -28,7 +17,8 @@ const Title = styled.h2`
   font-size: 3rem;
   margin-bottom: 40px;
   text-align: center;
-  color: #333;
+  color: ${({ theme }) => theme.titleColor};
+  transition: color 0.3s ease;
 `;
 
 const ContactInfo = styled.div`
@@ -39,7 +29,19 @@ const ContactInfo = styled.div`
 const ContactItem = styled.p`
   font-size: 1.8rem;
   margin-bottom: 15px;
-  color: #555;
+  color: ${({ theme }) => theme.textColor};
+  transition: color 0.3s ease;
+`;
+
+const EmailLink = styled.a`
+  color: ${({ theme }) => theme.linkColor};
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.linkHoverColor};
+    text-decoration: underline;
+  }
 `;
 
 const SocialLinks = styled.div`
@@ -50,26 +52,15 @@ const SocialLinks = styled.div`
 
 const SocialLink = styled.a`
   font-size: 2.4rem;
-  color: #333;
+  color: ${({ theme }) => theme.iconColor};
   transition: color 0.3s ease;
 
   &:hover {
-    color: #007bff;
-  }
-
-const EmailLink = styled.a
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-
-  &:hover {
-    color: #0056b3;
-    text-decoration: underline;
+    color: ${({ theme }) => theme.iconHoverColor};
   }
 `;
 
 const Contact = () => {
-    
     const email = "binarybard10101@gmail.com";
     return (
         <ContactSection id="contact">
@@ -87,7 +78,6 @@ const Contact = () => {
             <SocialLink href="https://www.linkedin.com/in/jiuk-choi-3b1972167/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
             </SocialLink>
-
             </SocialLinks>
         </Container>
         </ContactSection>

@@ -21,7 +21,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     line-height: 1.5;
     color: #333;
-    background-color: #fff;
+    background-color: ${({ theme }) => theme.body};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.3s linear;
   }
 
   a {
