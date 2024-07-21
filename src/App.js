@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/GlobalStyle';
 import theme from './styles/theme';
@@ -17,6 +18,7 @@ function App() {
           <Hero />
           <About />
           <Projects />
+          <Contact />
         </main>
 
       </div>
