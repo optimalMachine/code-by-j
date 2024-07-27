@@ -105,6 +105,7 @@ const About = () => {
               <SkillItem>OpenAI</SkillItem>
               <SkillItem>Python</SkillItem>
               <SkillItem>Flask</SkillItem>
+              <SkillItem>Solidity</SkillItem>
             </SkillsList>
           </TextContent>
           <ImageContainer>

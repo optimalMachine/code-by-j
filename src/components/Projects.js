@@ -111,6 +111,15 @@ const Projects = () => {
           View on GitHub
         </ProjectLink>
       </ProjectCard>
+      <ProjectCard>
+      <ProjectTitle>Ethereal Arbitrage: Flash Loan - Blockchain Project</ProjectTitle>
+      <ProjectDescription>
+      In the shadows of the blockchain, there exists a phenomenon known as the "flash loan" - a fleeting moment where wealth appears from the void, only to vanish in the blink of an eye.
+      </ProjectDescription>
+      <ProjectLink href="https://github.com/optimalMachine/flash-loan" target="_blank" rel="noopener noreferrer">
+        View on GitHub
+      </ProjectLink>
+      </ProjectCard>
         {/* will be updated in the near future*/}
       </Container>
     </ProjectsSection>
